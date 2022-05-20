@@ -2207,16 +2207,7 @@ break
                 ZimBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             
-                break
-           case 'apkdl': {
-             if (!q) throw `Example : ${prefix + command} https://rexdl.com/android/gbwhatsapp-plus-apk-mod.html/`
-             if (!isUrl(args[0]) && !args[0].includes('rexdl.com')) throw 'Link Invalid!'
-             let { rexdldown } = require('./Zimbot/index')
-             let anu = await rexdldown(q)
-             m.reply(`*Aplikasi Download*\n\n*🌹 Title : ${anu.judul}*\n*🌹 Update : ${anu.update_date}*\n*🌹 Version : ${anu.version}*\n*🌹 Size : ${anu.size}*\n\n*_Wait Minute App Is Sending_*`)
-             await sleep(3000)
-             ZimBotInc.sendMessage(from, {document: {url: anu.download[0].url}, mimetype: 'application/vnd.android.package-archive', fileName: anu.judul + '.apk'}, {quoted: m})
-           }
+               
             break
             case 'quotesanimekdksksksksk': case 'quoteanimexllzlzkl': {
 		let { quotesAnime } = require('./lib/scraper')
@@ -2712,11 +2703,7 @@ View list of message with ${prefix}listmsg`)
 	        }
 	        reply(teks)
 	    }
-	    break
-        case 'attp': case 'ttp': {
-            if (!text) throw `Example : ${prefix + command} text`
-            await ZimBotInc.sendImageAsSticker(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'ZimBotInc',  m, {asSticker: true})
-          }
+	    
         break
        
           
