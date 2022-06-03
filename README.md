@@ -39,7 +39,7 @@ apt install git
 
 apt update && apt upgrade
 
-git clone https://github.com/zim-bot/zimbot-v2
+git clone https://github.com/Kanambp/zimbot-v2
  
 cd zimbot-v2
 
